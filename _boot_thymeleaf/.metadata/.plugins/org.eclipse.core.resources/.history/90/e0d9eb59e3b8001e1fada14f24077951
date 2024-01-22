@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3 th:text="${sdto.p1}"></h3>
+<h3 th:text="${sdto.p2}"></h3>
+<h3 th:text="${sdto.p3}"></h3>
+</body>
+</html>

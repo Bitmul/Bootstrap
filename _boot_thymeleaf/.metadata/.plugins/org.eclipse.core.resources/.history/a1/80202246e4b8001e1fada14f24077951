@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div th:text="${strList}"></div>
+<div th:text="${map}"></div>
+<div th:text="${sdto}"></div>
+	<ul>
+		<li th:each="str: ${strList}" th:text="${str}"></li>
+	</ul>
+	
+		<ul>
+		<li th:each="str: ${map}" th:text="${str}"></li>
+	</ul>
+	
+		<ul>
+		<li th:each="str: ${sdto}" th:text="${str}"></li>
+	</ul>
+	
+	<script type="text/javascript">
+	const list =[[${strList}]];
+	const map =[[${map}]];
+	const sdto =[[${sdto}]];
+	</script>
+</body>
+</html>
